@@ -1,0 +1,41 @@
+sku_id,description,category,hts_group,usmca_qualifying,annual_demand,weekly_demand_sd,unit_cube,order_qty
+FK-1001,Nut and washer assortment 900 pc,Fastener kits,7318,1,49690,268.3,0.0016,11300
+FK-1002,Wood screw assortment 600 pc,Fastener kits,7318,1,34270,303.3,0.0042,4700
+FK-1003,Machine screw kit 800 pc,Fastener kits,7318,1,17220,79.5,0.0029,3900
+FK-1004,Hex bolt assortment 350 pc,Fastener kits,7318,1,24910,231.6,0.0018,3700
+FK-1005,Cabinet hardware kit 250 pc,Fastener kits,7318,1,47490,285.5,0.0031,6100
+FK-1006,Wall anchor kit 300 pc,Fastener kits,7318,1,12340,65.1,0.0017,2200
+FK-1007,Self-tapping screw kit 500 pc,Fastener kits,7318,1,14630,62.8,0.0034,1950
+HT-1001,Socket set 40 pc,Hand tools,8206,1,7210,50.1,0.001,1450
+HT-1002,Rubber mallet 24 oz,Hand tools,8201,1,9140,75.9,0.0054,1350
+HT-1003,Retractable utility knife,Hand tools,8205,1,3170,21.9,0.0053,600
+HT-1004,Stud finder with deep scan,Hand tools,9017,1,440,10.8,0.0482,60
+HT-1005,Pipe wrench 14 in,Hand tools,8204,0,4000,37.2,0.002,850
+HT-1006,Digital torque wrench 1/2 in,Hand tools,9017,1,740,15.7,0.0591,120
+HT-1007,Locking pliers set 3 pc,Hand tools,8203,0,14090,68.7,0.0055,3150
+HT-1008,Adjustable wrench 10 in,Hand tools,8204,1,32130,336.2,0.001,6300
+HT-1009,Aviation tin snips,Hand tools,8203,1,29140,242.7,0.0051,3550
+HT-1010,Hacksaw frame 12 in,Hand tools,8205,1,14540,79.3,0.003,2900
+HT-1011,Slip-joint pliers 8 in,Hand tools,8203,1,6640,74.9,0.002,1350
+HT-1012,Claw hammer 16 oz,Hand tools,8201,1,20540,179,0.0019,4800
+HT-1013,Digital caliper 6 in,Hand tools,9017,1,630,12.6,0.055,100
+HT-1014,Ratcheting wrench set 8 pc,Hand tools,8204,0,5020,47.1,0.0041,1250
+HT-1015,Cordless rotary multi-tool kit,Hand tools,8467,1,310,5.4,0.0586,50
+HT-1016,Long-nose pliers 6 in,Hand tools,8203,1,8710,86.7,0.0041,1850
+HT-1017,Combination wrench set 10 pc,Hand tools,8204,1,15330,174,0.0016,2600
+HT-1018,Pry bar set 3 pc,Hand tools,8205,1,23650,134.3,0.0038,5550
+HT-1019,Laser distance measurer 100 ft,Hand tools,9017,1,350,7.8,0.0354,50
+HT-1020,Bolt cutter 24 in,Hand tools,8203,0,4370,28.6,0.0027,700
+HT-1021,Screwdriver set 12 pc,Hand tools,8205,1,5710,34.7,0.0025,700
+HT-1022,Hex key set metric and SAE,Hand tools,8205,1,4920,42.7,0.0009,1100
+TS-1001,Parts bin 24 compartment,Tool storage,4202,1,2140,26.2,0.0309,350
+TS-1002,Top chest 27 in 6 drawer,Tool storage,9403,1,2760,21.4,0.4381,500
+TS-1003,Mobile workbench cabinet,Tool storage,9403,1,2340,18.5,0.5489,500
+TS-1004,Rolling tool chest 26 in 5 drawer,Tool storage,9403,1,2740,25.3,0.497,450
+TS-1005,Side cabinet roller 24 in,Tool storage,9403,1,1560,11.2,0.3506,350
+TS-1006,Canvas tool bag 18 in,Tool storage,4202,1,7780,67.1,0.0114,1450
+TS-1007,Socket rail organizer,Tool storage,4202,1,2900,33.7,0.0483,600
+TS-1008,Stackable tool box set 3 pc,Tool storage,9403,1,1480,12,0.357,250
+TS-1009,Tool pouch organizer,Tool storage,4202,1,5890,67.9,0.0645,800
+TS-1010,Steel tool chest 41 in 9 drawer,Tool storage,9403,1,3550,31.4,0.4324,650
+TS-1011,Stackable organizer tray,Tool storage,4202,1,8550,114.9,0.0705,1950

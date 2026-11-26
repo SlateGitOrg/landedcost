@@ -1,0 +1,4 @@
+origin,currency,mode,transit_days_mean,transit_days_sd,container_cost,usable_cube,port_per_unit
+China,CNY,ocean,38,8,4200,58,0.15
+Vietnam,USD,ocean,45,12,4800,58,0.18
+Mexico,MXN,truck,6,2,3800,90,0.2
