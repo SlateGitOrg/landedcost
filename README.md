@@ -34,7 +34,7 @@ For each SKU and origin the model computes, per unit:
 - safety-stock carrying = z x sqrt(L x sd_d^2 + d^2 x sd_L^2) x landed x carrying rate / annual demand, with d = annual demand / 52 and L, sd_L the lead time mean and SD in weeks;
 - cycle-stock carrying = order quantity / 2 x landed x carrying rate / annual demand.
 
-Total cost is the sum. Every carrying charge is proportional to landed cost, and landed cost is linear in the incumbent's additional tariff t, so total cost is `a + b t` and an alternative with total cost `TCO_alt` ties at `t* = (TCO_alt - a) / b`. The workbook sheets are `Inputs_SKU`, `Inputs_Origin`, `Quotes`, `Tariffs`, `FX`, `Params` (defined names `Carrying_Rate`, `Service_Level`), `Calc` (one row per SKU x origin), `Compare` (best origin, saving, break-even tariff), `Scenario` (China tariff 0-60% in 5-point steps, plus a what-if cell) and `Notes`.
+Total cost is the sum. Carrying cost is charged on the full landed cost (including freight, duty and port), not on FOB alone, and lead time is the origin's ocean or truck transit time only: there is no factory production or order-processing time. Every carrying charge is proportional to landed cost, and landed cost is linear in the incumbent's additional tariff t, so total cost is `a + b t` and an alternative with total cost `TCO_alt` ties at `t* = (TCO_alt - a) / b`. The workbook sheets are `Inputs_SKU`, `Inputs_Origin`, `Quotes`, `Tariffs`, `FX`, `Params` (defined names `Carrying_Rate`, `Service_Level`), `Calc` (one row per SKU x origin), `Compare` (best origin, saving, break-even tariff), `Scenario` (China tariff 0-60% in 5-point steps, plus a what-if cell) and `Notes`.
 
 ## Quick start
 
@@ -114,7 +114,7 @@ The gaps are small because the pattern is a margin effect: Vietnam is 0.4% to 0.
 3. **Recalculation with `formulas`, not Excel or LibreOffice.** It runs anywhere Python does, offline, in CI. The price is that it is not Excel's engine: the workbook sticks to functions it supports (INDEX, MATCH, SQRT, SUMPRODUCT, `_xlfn.NORM.S.INV`). `verify` also asserts that cells are still formulas, because replacing a formula with its correct value would otherwise be invisible.
 4. **One quote sheet with a `SKU|origin` key.** Quotes are a long table keyed by a text column and read with INDEX/MATCH, which works in every Excel version and avoids array formulas. The key column has to stay consistent with the SKU and origin columns beside it.
 5. **Same order quantity and carrying rate for every origin.** Mexico by truck could realistically ship smaller lots, which would lower its cycle stock. Holding these equal keeps the comparison about lead time, freight and tariffs, and is conservative for Mexico.
-6. **Planted patterns by constrained redraw.** The generator draws each planted SKU from ranges that make its pattern likely and redraws until it holds, so the tool-chest, flip and non-qualifying sets are exact for any seed. The flip SKUs are therefore not independent draws, and their margins are thin by construction.
+6. **Planted patterns by constrained redraw.** The generator draws each planted SKU from ranges that make its pattern likely and redraws until it holds, so the tool-chest, flip and non-qualifying sets are exact for any seed. The flip SKUs are therefore not independent draws, and their margins are thin by construction. Plain SKUs are rejection-sampled too: a draw is kept only if it is not a flip, so the flip list is exactly the planted set.
 
 ## Testing
 

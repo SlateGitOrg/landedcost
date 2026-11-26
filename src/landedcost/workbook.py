@@ -568,6 +568,8 @@ NOTES = [
     "per cycle), not a fill rate, and ignores the size of a stockout. Demand and lead time "
     "are independent and normal.",
     "Order quantities and carrying rate are the same whichever origin supplies the SKU.",
+    "Carrying is charged on the full landed cost, not on FOB alone. Lead time is the origin's "
+    "transit time only (no production or order-processing time).",
     "",
     "Break-even tariff: every carrying charge is proportional to landed cost, so total cost "
     "is linear in the incumbent's additional tariff t: TCO = a + b x t. An alternative with "
